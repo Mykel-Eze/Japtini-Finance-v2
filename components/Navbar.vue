@@ -18,7 +18,7 @@
 
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li>
-              <nuxt-link to="/" @click="scrollToTop()">
+              <nuxt-link to="/approach" @click="scrollToTop()">
                 <span>Our Approach</span>
               </nuxt-link>
             </li>
