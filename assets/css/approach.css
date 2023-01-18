@@ -1,0 +1,317 @@
+/**** Last-Mile Style ****/
+section#last-mile {
+  padding: 50px 0 100px;
+  background: #D8EDC4;
+}
+h4.wpb-sect-heading {
+  font-size: 64px;
+  line-height: 72px;
+  color: var(--tert-color);
+  max-width: 660px;
+  font-family: var(--font-bold);
+  margin-bottom: 50px;
+}
+section#last-mile .sect-contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+img.int-img {
+  display: none;
+  width: 90%;
+  position: relative;
+  z-index: 1;
+}
+img.int-img.active-int-img {
+  display: initial;
+}
+h5.indicator-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -0.5px;
+  margin-top: 0;
+}
+span.indicator-text {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  color: #6f6f6f;
+  font-family: var(--font-medium);
+}
+.active-indicator-block span.indicator-text {
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--tert-color);
+}
+.txt-indicator-block {
+  position: relative;
+  padding: 15px 20px;
+}
+.txt-indicator-block.active-indicator-block::after {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 90%;
+  left: 0;
+  top: 5%;
+  background-color: var(--pry-color);
+  border-radius: 20px;
+  opacity: 0.5;
+  animation: indicatorHeight 1s 1;
+  animation-play-state: running !important;
+}
+ul.int-txt-indicator {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 98%;
+}
+
+@keyframes indicatorHeight {
+  from {
+      height: 0;
+  }
+  to {
+      height: 90%;
+  }
+}
+
+img.green-rect {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -50px;
+}
+
+@media(max-width: 992px) {
+  section#last-mile .sect-contents {
+    grid-template-columns: 100%;
+    gap: 20px;
+  }
+  .qa-block {
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+@media(max-width: 600px) {
+  h4.wpb-sect-heading {
+    font-size: 34px;
+    line-height: 42px;
+    text-align: center;
+  }
+  img.int-img {
+    width: 100%;
+  }
+  .txt-indicator-block {
+    display: none;
+  }
+  .txt-indicator-block.active-indicator-block {
+    display: block;
+  }
+}
+/**** end of Last-Mile Style ****/
+
+/**** Earning-Priority Style ****/
+section#earning-priority {
+  padding: 100px 0;
+  background: linear-gradient(0deg, #111D05, #111D05);
+  color: white;
+}
+.earning-priority-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+.epw-txt-desc {
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 600px) {
+  section#earning-priority {
+    padding: 50px 0;
+  }
+  .earning-priority-wrapper {
+    grid-template-columns: 100%;
+  }
+}
+/**** end of Earning-Priority Style ****/
+
+/**** Q-and-A Style ****/
+section#q-and-a {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #FFFFFF 33.38%, #88C74B 100%);
+}
+section#q-and-a h4.section-title {
+  margin-bottom: 80px;
+  margin-top: 0;
+}
+.qa-block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+.qa-txt-title {
+  font-size: 32px;
+  line-height: 38px;
+  font-family: var(--font-bold);
+  color: #429C07;
+  margin-bottom: 25px;
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 600px) {
+  section#q-and-a {
+    padding: 80px 0 50px;
+  }
+  .qa-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .qa-block:nth-child(even) {
+    flex-direction: column-reverse;
+  }
+  .qa-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+/**** end of Q-and-A Style ****/
+
+/**** Integrated-Network Style ****/
+section#integrated-network {
+  padding: 80px 0;
+}
+.integrated-network-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+.inw-title-side {
+  font-size: 64px;
+  line-height: 71px;
+  font-family: var(--font-bold);
+}
+.inw-desc-side {
+  font-size: 18px;
+}
+
+section#integrated-network .marquee-content {
+  display: flex;
+  animation: scrolling 25s linear infinite;
+  animation-play-state: running !important;
+  margin-top: 50px;
+}
+.marquee-item {
+  flex: 0 0 90vw;
+  /* margin: 0 1vw; */
+}
+.marquee-item:not(:last-child) {
+  margin-right: 5px;
+}
+.marquee-item img {
+  display: block;
+  width: 100%;
+  /*   padding: 0 20px; */
+}
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translatex(-90vw); }
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 600px) {
+  .integrated-network-wrapper {
+    grid-template-columns: 100%;
+  }
+  .marquee-item {
+    flex: 0 0 100vw;
+  }
+}
+/**** end of Integrated-Network Style ****/
+
+/**** Arila-Companies Style ****/
+section#arila-companies {
+  padding: 50px 0 80px;
+  background-image: url('../images/dotted-rings.png');
+  background-size: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.arila-companies-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+}
+.company-block {
+  background: #FFFFFF;
+  box-shadow: 5px 13px 22px 4px rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+  height: 100%;
+  width: 90%;
+  margin-left: 5%;
+  padding: 25px;
+}
+div#arila-block .company-block, div#arila-block-1 .company-block {
+  width: 100%;
+  margin-left: 0;
+  background: #1A242D;
+  color: white;
+  height: auto;
+}
+div#arila-block-1 .company-block {
+  margin-bottom: 50px;
+}
+img.company-image {
+  margin-bottom: 15px;
+  height: 40px;
+}
+.company-name {
+  font-size: 20px;
+  font-family: var(--font-smbold);
+}
+.company-desc {
+  font-size: 17px;
+}
+.arila-txt {
+  color: #8DC63F;
+}
+
+@media (min-width: 993px) {
+  .company-block-wrapper.jl .company-block {
+    height: calc(100% - 80px);
+  }
+}
+
+@media(max-width: 992px) {
+  section#arila-companies {
+    padding: 0;
+    padding-bottom: 80px;
+    background-size: 100%;
+  }
+  .arila-companies-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+  .company-block {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+@media(max-width: 600px) {
+  .arila-companies-wrapper {
+    grid-template-columns: 100%;
+  }
+}
+/**** end of Arila-Companies Style ****/

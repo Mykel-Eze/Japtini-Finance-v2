@@ -6,11 +6,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-color: var(--pry-color);
-  background-image: url('../images/hero-image-2.jpg');
   position: relative;
   overflow: hidden;
 }
-#home .home-overlay {
+#home .home-overlay, .other-pages #home::before {
   position: absolute;
   content: "";
   width: 100%;
