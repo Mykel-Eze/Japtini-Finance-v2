@@ -212,4 +212,11 @@ export default {
   height: 70vh;
   min-height: 400px;
 }
+
+@media (max-width: 600px) {
+  h1.home-txt-title {
+    font-size: 63px;
+    line-height: 65px;
+  }
+}
 </style>
