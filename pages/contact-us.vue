@@ -43,7 +43,7 @@
                     Talk to us.
                   </div>
                   <div class="cds-desc">
-                    Join Us to provide access at scale to affordable food, clean energy,
+                    Join us to provide access at scale to affordable food, clean energy,
                     low-cost finance and efficient connectivity
                   </div>
                 </div>
