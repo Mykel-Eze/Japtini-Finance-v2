@@ -79,7 +79,11 @@ a.home-btn.btn:hover {
   margin-top: 30px;
 }
 
-@media (max-width: 992px) {}
+@media (max-width: 992px) {
+  video#videoBg {
+    display: none;
+  }
+}
 
 @media (max-width: 600px) {
   .home-txt-wrapper {
